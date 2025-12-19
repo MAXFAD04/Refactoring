@@ -1,0 +1,28 @@
+C:\Users\ASUS\RiderProjects\RPKApp1\RPKApp9\bin\Debug\net8.0\RPKApp9.exe
+C:\Users\ASUS\RiderProjects\RPKApp1\RPKApp9\bin\Debug\net8.0\RPKApp9.deps.json
+C:\Users\ASUS\RiderProjects\RPKApp1\RPKApp9\bin\Debug\net8.0\RPKApp9.runtimeconfig.json
+C:\Users\ASUS\RiderProjects\RPKApp1\RPKApp9\bin\Debug\net8.0\RPKApp9.dll
+C:\Users\ASUS\RiderProjects\RPKApp1\RPKApp9\bin\Debug\net8.0\RPKApp9.pdb
+C:\Users\ASUS\RiderProjects\RPKApp1\RPKApp9\obj\Debug\net8.0\RPKApp9.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\RiderProjects\RPKApp1\RPKApp9\obj\Debug\net8.0\RPKApp9.AssemblyInfoInputs.cache
+C:\Users\ASUS\RiderProjects\RPKApp1\RPKApp9\obj\Debug\net8.0\RPKApp9.AssemblyInfo.cs
+C:\Users\ASUS\RiderProjects\RPKApp1\RPKApp9\obj\Debug\net8.0\RPKApp9.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\RiderProjects\RPKApp1\RPKApp9\obj\Debug\net8.0\RPKApp9.dll
+C:\Users\ASUS\RiderProjects\RPKApp1\RPKApp9\obj\Debug\net8.0\refint\RPKApp9.dll
+C:\Users\ASUS\RiderProjects\RPKApp1\RPKApp9\obj\Debug\net8.0\RPKApp9.pdb
+C:\Users\ASUS\RiderProjects\RPKApp1\RPKApp9\obj\Debug\net8.0\RPKApp9.genruntimeconfig.cache
+C:\Users\ASUS\RiderProjects\RPKApp1\RPKApp9\obj\Debug\net8.0\ref\RPKApp9.dll
+D:\Downloads\Практика 1\Практика 1\RPKApp9\bin\Debug\net8.0\RPKApp9.exe
+D:\Downloads\Практика 1\Практика 1\RPKApp9\bin\Debug\net8.0\RPKApp9.deps.json
+D:\Downloads\Практика 1\Практика 1\RPKApp9\bin\Debug\net8.0\RPKApp9.runtimeconfig.json
+D:\Downloads\Практика 1\Практика 1\RPKApp9\bin\Debug\net8.0\RPKApp9.dll
+D:\Downloads\Практика 1\Практика 1\RPKApp9\bin\Debug\net8.0\RPKApp9.pdb
+D:\Downloads\Практика 1\Практика 1\RPKApp9\obj\Debug\net8.0\RPKApp9.GeneratedMSBuildEditorConfig.editorconfig
+D:\Downloads\Практика 1\Практика 1\RPKApp9\obj\Debug\net8.0\RPKApp9.AssemblyInfoInputs.cache
+D:\Downloads\Практика 1\Практика 1\RPKApp9\obj\Debug\net8.0\RPKApp9.AssemblyInfo.cs
+D:\Downloads\Практика 1\Практика 1\RPKApp9\obj\Debug\net8.0\RPKApp9.csproj.CoreCompileInputs.cache
+D:\Downloads\Практика 1\Практика 1\RPKApp9\obj\Debug\net8.0\RPKApp9.dll
+D:\Downloads\Практика 1\Практика 1\RPKApp9\obj\Debug\net8.0\refint\RPKApp9.dll
+D:\Downloads\Практика 1\Практика 1\RPKApp9\obj\Debug\net8.0\RPKApp9.pdb
+D:\Downloads\Практика 1\Практика 1\RPKApp9\obj\Debug\net8.0\RPKApp9.genruntimeconfig.cache
+D:\Downloads\Практика 1\Практика 1\RPKApp9\obj\Debug\net8.0\ref\RPKApp9.dll
