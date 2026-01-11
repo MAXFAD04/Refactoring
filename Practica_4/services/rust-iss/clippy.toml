@@ -1,0 +1,6 @@
+# Clippy configuration for strict code quality checks
+# Настройка Clippy для строгой проверки качества кода по пути самурая
+
+# Уровень предупреждений
+warn-on-all-wildcard-imports = true
+

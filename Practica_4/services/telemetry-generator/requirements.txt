@@ -1,0 +1,5 @@
+# Python dependencies для Telemetry Generator
+# Минимальный набор зависимостей для production
+
+psycopg2-binary==2.9.9  # PostgreSQL adapter
+
