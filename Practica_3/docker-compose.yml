@@ -1,0 +1,118 @@
+services:
+  api_gateway:
+    build: ./api_gateway
+    command: npm run dev
+    ports:
+      - "8000:8000"
+    environment:
+      - NODE_ENV=development
+      - USERS_SERVICE_URL=http://service_users:8001
+      - ORDERS_SERVICE_URL=http://service_orders:8002
+      - MANAGEMENT_SERVICE_URL=http://service_management:8003
+    depends_on:
+      - service_users
+      - service_orders
+      - service_management
+    volumes:
+      - ./api_gateway/app:/app/app
+      - /app/node_modules
+    networks:
+      - app-network
+
+  service_users:
+    build: ./service_users
+    command: npm run dev
+    ports:
+      - "8001:8001"
+    environment:
+      - NODE_ENV=development
+      - DATABASE_URL=postgresql://postgres:password@db:5432/rpc3
+      - REDIS_URL=redis://cache:6379
+      - PORT=8001
+    depends_on:
+      - db
+      - cache
+    volumes:
+      - ./service_users/app:/app/app
+      - /app/node_modules
+    networks:
+      - app-network
+
+  service_orders:
+    build: ./service_orders
+    command: npm run dev
+    ports:
+      - "8002:8002"
+    environment:
+      - NODE_ENV=development
+      - DATABASE_URL=postgresql://postgres:password@db:5432/rpc3
+      - REDIS_URL=redis://cache:6379
+      - PORT=8002
+    depends_on:
+      - db
+      - cache
+    volumes:
+      - ./service_orders/app:/app/app
+      - /app/node_modules
+    networks:
+      - app-network
+
+  service_management:
+    build: ./service_management
+    command: npm run dev
+    ports:
+      - "8003:8003"
+    environment:
+      - NODE_ENV=development
+      - DATABASE_URL=postgresql://postgres:password@db:5432/rpc3
+      - REDIS_URL=redis://cache:6379
+      - PORT=8003
+    depends_on:
+      - db
+      - cache
+    volumes:
+      - ./service_management/app:/app/app
+      - /app/node_modules
+    networks:
+      - app-network
+
+  db:
+    image: postgres:17
+    container_name: postgres_db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: rpc3
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - app-network
+  
+  pg_admin:
+    image: dpage/pgadmin4
+    container_name: pgadmin
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: postgres@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: password
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+    networks:
+      - app-network
+
+  cache:
+    image: redis:7-alpine
+    networks:
+      - app-network
+
+volumes:
+  postgres_data:
+
+networks:
+  app-network:
+    driver: bridge
